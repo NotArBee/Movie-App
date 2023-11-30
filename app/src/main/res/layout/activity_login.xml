@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_img"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/marvel"
+        android:layout_width="324dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/lalajo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:layout_width="315dp"
+        android:layout_height="77dp"
+        android:id="@+id/caption"
+        android:layout_below="@+id/marvel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Watch millions of films and dramas from around the world"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_lanjutkan"
+        android:minHeight="48dp"
+        android:text="Lanjutkan"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/lalajo"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/lalajo_foreground" />
+
+</RelativeLayout>

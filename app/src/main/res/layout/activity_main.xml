@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_img"
+    android:padding="16dp">
+
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:id="@+id/searc_button"
+        android:contentDescription="Search"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search"
+        android:src="@drawable/search_glass" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/populer_film"/>
+
+    <TextView
+        android:id="@+id/todayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/popularRecyclerView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/todayRecyclerView"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/today_film"
+        android:layout_below="@id/todayText"/>
+
+</RelativeLayout>
